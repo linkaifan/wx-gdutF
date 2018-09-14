@@ -1,0 +1,48 @@
+{
+    "pages": [
+        "pages/course/main",
+        "pages/wall/main",
+        "pages/explore/main",
+        "pages/login/main",
+        "pages/about/main",
+        "pages/news/main",
+        "pages/origami/main",
+        "pages/painter/main",
+        "pages/morning/main",
+        "pages/grade/main",
+        "pages/score/main",
+        "pages/exam/main",
+        "pages/library/main",
+        "pages/store/main"
+    ],
+    "window": {
+        "backgroundColor": "#ECEDF1",
+        "backgroundTextStyle": "white",
+        "navigationBarBackgroundColor": "#41AE8E",
+        "navigationBarTitleText": "WeGDUT",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#353535",
+        "selectedColor": "#41AE8E",
+        "backgroundColor": "#FFFFFF",
+        "borderStyle": "white",
+        "list": [{
+                "pagePath": "pages/course/main",
+                "text": "课程表",
+                "iconPath": "static/icon/course1.png",
+                "selectedIconPath": "static/icon/course2.png"
+            }, {
+                "pagePath": "pages/wall/main",
+                "text": "工大墙",
+                "iconPath": "static/icon/wall1.png",
+                "selectedIconPath": "static/icon/wall2.png"
+            }, {
+                "pagePath": "pages/explore/main",
+                "text": "发现",
+                "iconPath": "static/icon/explore1.png",
+                "selectedIconPath": "static/icon/explore2.png"
+            }
+        ]
+    }
+}

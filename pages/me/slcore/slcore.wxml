@@ -1,0 +1,44 @@
+<view class="wrapper">
+  <view class="input_form">
+    <view class="name_block form_block">
+      <view class="icon_block">
+        <image src="../../../assets/icon/slname.png" class="slname_icon icon"></image>
+      </view>
+      <view class="input_block">
+         <input bindinput="handleNameInput" class="weui-input name_input slinput" placeholder="请输入姓名" value="{{name}}"/> 
+      </view>
+    </view>
+    <view class="id_block form_block">
+      <view class="icon_block">
+        <image src="../../../assets/icon/slid.png" class="slid_icon icon"></image>
+      </view>
+      <view class="input_block">
+        <input bindinput="handleIdInput" class="weui-input id_input slinput" type="number" placeholder="请输入准考证号" value="{{id}}"/> 
+      </view>
+    </view>
+    <view class="verify_block form_block">
+      <view class="icon_block">
+        <image src="../../../assets/icon/identifying.png" class="slverify_icon icon"></image>
+      </view>
+      <view class="input_block">
+         <input bindinput="handleVerifyInput" class="weui-input slinput" placeholder="请输入验证码" value="{{verify}}"/> 
+      </view>
+      <image class="verifyImg" src="{{verifyUrl}}" bindtap="requestAnotherVerify"></image>
+    </view>
+  </view>
+  <button class="button" bindtap="handleBind" type="primary" style="background-color: #41ae8e;">查询</button>
+  <view class="bottom_half" style="display:{{show}};">
+    <view class="result_table">
+      <view class="level_cell cell">{{level}}</view>
+      <view class="score_cell">
+        <view class="sum_cell cell">{{score}}</view>
+        <view class="list_cell">
+          <view class="data_cell cell">{{date}}</view>
+          <view class="listen_cell cell">{{listen}}</view>
+          <view class="read_cell cell">{{read}}</view>
+          <view class="write_cell cell">{{write}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

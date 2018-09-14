@@ -1,0 +1,52 @@
+<import src="../../loading/loading" />
+<template is="{{loading}}"></template>
+<view class="wrapper">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="handleTabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <swiper current="{{current}}" bindchange="handleSwiper">
+                <swiper-item>
+                    <image class="image" src="{{image}}"></image>
+                    <view class="info">
+                        <view class="title">{{info[0]}}</view>
+                        <view class="author"><view class="left">作　者：</view><view class="right">{{info[1]}}</view></view>
+                        <view class="public"><view class="left">出版社： </view><view class="right">{{info[3]}}</view></view>
+                        <view ><text class="isbn">ISBN：</text>{{info[4]}}</view>
+                        <view class="count">价　格： {{info[2]}}元</view>
+                        
+                    </view>
+                </swiper-item>
+                <swiper-item class="weui-tab__content">
+                    <view class="intro">
+                        <view>{{intro}}</view>
+                    </view>
+                </swiper-item>
+                <swiper-item class="weui-tab__content">
+                    <scroll-view scroll-y="true" class="contents">
+                        <view wx:for="{{contents}}" wx:key="{{item.key}}">{{item}}</view>   
+                    </scroll-view>
+                </swiper-item>
+                <swiper-item class="weui-tab__content">
+                <scroll-view  scroll-y="true" class="collection">
+                    <view class="site"wx:for="{{site}}" wx:key="{{item.key}}">
+                            <view class="information">
+                            <view class="informa">
+                            <view class="library">{{item.Room}}</view>
+                            <view class="coordinate">{{item.position}}</view>
+                            </view>
+                            <view class="status">{{item.Status}}</view>                           
+                      </view>
+                    </view>
+                    </scroll-view>
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+</view>

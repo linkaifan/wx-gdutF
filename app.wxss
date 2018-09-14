@@ -1,0 +1,9 @@
+
+@import 'assets/style/weui.wxss'
+@import 'pages/me/loading/loading.wxss'
+page{
+    width: 100%;
+    height: 100%;
+    background: #ECEDF1;
+    margin:0;
+}

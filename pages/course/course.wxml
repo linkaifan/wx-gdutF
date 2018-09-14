@@ -1,0 +1,118 @@
+<import src="../me/loading/loading" />
+<template is="{{loading}}"></template>
+<view class="wrapper">  
+<view style='display:{{tolog}}'><image class="unlog" src="../../assets/icon/log.png"></image>
+<image  class="tolog" bindtouchstart='handletolog' src="../../assets/icon/tolog.png"></image>
+</view>
+<view class="maskT" style='display:{{tipS}}'>
+<image  class="tipS" bindtouchstart='handleknow' src="../../assets/icon/tip.png"></image>
+</view>
+    <view class="course"> 
+        <view class="times">
+            <view class="blank">
+            <image class='renovate' bindtouchstart='renovate' src="{{re_url}}"></image>
+            </view>    
+            <view class="time1">
+                <view class="stress">1-2</view>
+                <view>8:30</view>       
+            </view>
+            <view class="time1">
+                <view class="stress">3-4</view>
+                <view>10:25</view>       
+            </view>
+             <view class="time">               
+                <view>13:50</view>
+                <view class="stress">5</view>
+            </view>
+              <view class="time1">
+                <view class="stress">6-7</view>
+                <view>14:40</view>       
+            </view>
+            <view class="time1">
+                <view class="stress">8-9</view>
+                <view>16:30</view>       
+            </view>
+            <view class="time2">               
+                <view class="stress">10-12</view>
+                <view>18:30</view>       
+            </view>
+        </view>
+        <view class="weekday monday" data-value="1">
+            <view class="date">
+                <view class="stress {{today[0].color}}">周一</view>
+                <view class="{{today[0].color}}">{{weekDate[0]}}</view>
+            </view>
+            <template is="subject" wx:for="{{course[1]}}" wx:key="{{item.key}}" data="{{item}}"></template>
+        </view>
+        <view class="weekday tuesday" data-value="2" >
+            <view class="date">
+                <view class="stress {{today[1].color}}">周二</view>
+                <view class="{{today[1].color}}">{{weekDate[1]}}</view>
+            </view>
+            <template is="subject" wx:for="{{course[2]}}" wx:key="{{item.key}}" data="{{item}}"></template>
+        </view>
+        <view class="weekday wednesday" data-value="3">
+            <view class="date">
+                <view class="stress {{today[2].color}}">周三</view>
+                <view class="{{today[2].color}}">{{weekDate[2]}}</view>
+            </view>
+            <template is="subject" wx:for="{{course[3]}}" wx:key="{{item.key}}" data="{{item}}"></template>
+        </view>
+        <view class="weekday thursday" data-value="4">
+            <view class="date">
+                <view class="stress {{today[3].color}}">周四</view>
+                <view class="{{today[3].color}}">{{weekDate[3]}}</view>
+            </view>
+            <template is="subject" wx:for="{{course[4]}}" wx:key="{{item.key}}" data="{{item}}"></template>
+        </view>
+        <view class="weekday friday" data-value="5">
+            <view class="date">
+                <view class="stress {{today[4].color}}">周五</view>
+                <view class="{{today[4].color}}">{{weekDate[4]}}</view>
+            </view>
+            <template is="subject" wx:for="{{course[5]}}" wx:key="{{item.key}}" data="{{item}}"></template>
+        </view>
+        <view class="weekday saturday" data-value="6">
+            <view class="date">
+                <view class="stress {{today[5].color}}">周六</view>
+                <view class="{{today[5].color}}">{{weekDate[5]}}</view>
+            </view>
+            <template is="subject" wx:for="{{course[6]}}" wx:key="{{item.key}}" data="{{item}}"></template>
+        </view>
+        <view class="weekday sunday" data-value="7">
+            <view class="date">
+                <view class="stress {{today[6].color}}">周日</view>
+                <view class="{{today[6].color}}">{{weekDate[6]}}</view>
+            </view>
+            <template is="subject" wx:for="{{course[7]}}" wx:key="{{item.key}}" data="{{item}}"></template>
+        </view>
+    </view>
+    <picker bindchange="handleWeek" value="{{weekNo-1}}" range="{{weekList}}">
+        <view class="index" bindtouchmove="handleIndexMove" style="left:{{left}}px; top: {{top}}px;">{{weekNo}}</view>
+    </picker>
+<view class="maskAll" style="display:{{mask}}" >
+<view class="mask" bindtouchend="closecour"></view>
+<view class="addcour">
+<view class="title">
+{{cour.kcmc}}
+</view>
+<view class="details">
+<icon class="weui-icon-clear_in-box" bindtouchend="closecour" type="clear" size="16"></icon>
+<form>
+<view class="informa"><text>授课老师 :</text><input class="name" value="  {{cour.teaxms}}"disabled="disabled"/></view>
+<view class="informa"><text>上课地点 :</text> <input class="place" value="  {{cour.jxcdmc}}"disabled="disabled"/></view>
+<view class="informa"><text>课程类型 : </text><input class="place" placeholder="请填写" value="  {{cour.jxhjmc}}"disabled="disabled"/></view>
+<view class="informa last"><text>上课节数 :</text>  <input class="place" value="  {{cour.jcdm}}"disabled="disabled"/></view>
+<view bindtap='delete_cou'>删除课程</view>
+</form>
+</view>
+<view class="bottom"></view>
+</view>
+</view>
+</view>
+<template name="subject">
+    <view class="subject" data-one="{{item}}" bindtouchstart='showcour'style="background: {{item.color}}; flex: {{item.flex}};font-size:{{item.fontSize}}pt">
+        <view class="cour" >{{item.kcmc}}</view>
+        <view class="cour">{{item.jxcdmc}}</view>
+    </view>
+</template>

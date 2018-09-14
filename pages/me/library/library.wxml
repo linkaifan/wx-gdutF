@@ -1,0 +1,35 @@
+<import src="../loading/loading" />
+<template is="{{loading}}"></template>
+<view class="wrapper">
+<form  bindsubmit="handleSearch" bindreset="formReset">
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="15"></icon>
+                <input name="input" type="text" class="weui-search-bar__input input" placeholder="请输入书籍名称" value="{{searchValue}}" focus="{{inputShowed}}"  bindconfirm="search" />
+                 <icon class="weui-icon-clear_in-box" bindtouchend="handleClearInput" type="clear" size="16"></icon>
+            </view>
+        </view>
+         <button class="sousuo" formType="submit">搜索</button>
+    </view>  
+   </form>
+   <image class="undefined" src="{{url}}" style="display:{{display}};"></image>
+    <view class="searchList">
+        <template is="searchItem" wx:for="{{searchList}}" data="{{item}}" wx:key="{{item.key}}"></template>
+    </view>
+    <template is="bookList" wx:for="{{bookList}}" data="{{item}}" wx:key="{{item.key}}"></template>
+</view>
+<template name="bookList">
+    <view class="bookList" data-ctrlrd="{{item.CtrlRd}}" data-ctrlno="{{item.CtrlNo}}" data-title="{{_name}}" bindtap="handleBookEntry" hover="true" hover-class="button-hover">
+        <image class="bookLogo" src="../../../assets/icon/book.png" style="display:{{display}}"></image>
+        <view class="bookInfo">
+            <view class="title">{{item. Title}}</view> 
+            <view class="author">作者：{{item.Author}}</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+</template>
+<button bindtap="toMyBorrow">查看我的借阅</button>
+<template name="searchItem">
+    <text class="keyword_item" bindtap="handleSelectHot" data-index="{{item}}">{{item}}</text>
+</template>

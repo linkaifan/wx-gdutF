@@ -1,0 +1,57 @@
+<view class="wrapper">
+  <view class="test weui-cells weui-cells_after-title">
+ <navigator url="/pages/me/slcore/slcore" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image class="icon FSscoreIcon" src="../../assets/icon/46score.png"></image>
+            </view>
+            <view class="weui-cell__bd">四六级查询</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+    <!--<navigator url="/pages/me/score/score" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image class="icon" src="../../assets/icon/score.png"></image>
+      </view>
+      <view class="weui-cell__bd">成绩查询</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    </view>
+    <view class="book weui-cells weui-cells_after-title" >-->
+    <navigator url="/pages/me/library/library" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image class="icon libraryIcon" src="../../assets/icon/library.png"></image>
+      </view>
+      <view class="weui-cell__bd">图书馆藏</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <!--<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image class="icon" src="../../assets/icon/borrow.png"></image>
+            </view>
+            <view class="weui-cell__bd">我的借阅</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>-->
+    <navigator url="/pages/me/newsList/newsList" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image class="icon newsIcon" src="../../assets/icon/news.png"></image>
+      </view>
+      <view class="weui-cell__bd">校内新闻</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+  <view class="our weui-cells weui-cells_after-title">
+    <navigator url="/pages/me/bind/bind" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image class="icon bindIcon" src="../../assets/icon/bind.png"></image>
+      </view>
+      <view class="weui-cell__bd">登录</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="/pages/me/about/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image class="icon ourIcon" src="../../assets/icon/our.png"></image>
+      </view>
+      <view class="weui-cell__bd">关于我们</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view> 
+</view>

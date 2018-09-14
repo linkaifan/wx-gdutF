@@ -1,0 +1,145 @@
+.wrapper{
+    width: 100%;
+    height: 100%; 
+}
+.logoWrapper{
+    height: 550rpx;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.logo{
+    width: 192rpx;
+    height: 130rpx;
+    margin-top:60rpx;
+    margin-left: 305.56rpx;
+    margin-bottom: 38rpx
+    }
+.content{
+  width: 541.46rpx;
+  height: 312.64rpx;
+  margin: 0 auto;
+}
+swiper{
+    width: 730rpx;
+    height: 650rpx;
+    background: #FFFFFF;
+    border-radius: 20rpx;
+    margin: 0 auto;
+}
+.aboutWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cour{
+  text-align: center;
+    align-items: center;
+}
+.contect{
+  background-color:#fff;
+}
+.title{
+    font-size: 35rpx;
+    line-height: 60rpx;
+    color: #29BB73;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ECEDF1;
+}
+.aboutOur{
+    padding: 25rpx;
+    font-size: 30rpx;
+    color: #353535;
+    background:#fff;
+}
+textarea{
+  background:#fff; 
+    width: 600rpx; 
+    height: 300rpx;   
+    font-size: 35rpx;
+    border: 1px solid #ECEDF1;
+    padding: 25rpx;
+    position: absolute;
+    top: 600rpx;
+    left: 50rpx;
+    border-radius:30rpx;
+}
+button{
+    width: 700rpx;
+    position: absolute;
+    top: 1000rpx;
+    left: 25rpx;
+
+}
+.cell {
+  padding: 10px 40rpx 20rpx 50rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.cell:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 1px;
+  border-top: 1rpx solid #D9D9D9;
+  color: #3fab8b;
+  left: 15px;
+  right: 100px;
+  width: 680rpx;
+  opacity: 0.5;
+}
+.cell_access::before{
+    content: " ";
+  position: absolute;
+  top: 0;
+  height: 1px;
+  border-top: 1rpx solid #D9D9D9;
+  color: #3fab8b;
+  left: 30px;
+  right: 100px;
+  width: 680rpx;
+}
+.cell:first-child:before {
+  display: none;
+}
+._active {
+  background-color: #ECECEC;
+}
+.cell_primary {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+.cell__bd {
+  color: #999999;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.cell__ft {
+  text-align: right;
+}
+.cell_access {
+  color: inherit;
+  /*padding-bottom: 15rpx;*/
+  height: 70rpx;
+}
+.cell__ft_in-access {
+  padding-right: 13px;
+  position: relative;
+}
+.arrow{
+  height: 14rpx;
+  width:14rpx;
+  border-top:#353535 1rpx solid;
+  border-right:#353535 1rpx solid;
+  
+}

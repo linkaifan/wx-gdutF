@@ -1,0 +1,30 @@
+<view class="wrapper">
+    <view class="logoWrapper">
+        <image class="logo" src="../../../assets/icon/logoS.png"></image>
+        <!--<image class="content" src="../../../assets/icon/content.png"></image>-->
+        <view class="contect">
+        <view class="our weui-cells weui-cells_after-title">
+    <view  class="cell cell_access" >
+      <view class="cell__bd">制作团队</view>
+      <view class="cell__ft ">维生数工作室</view>
+    </view>
+    <view  class="cell cell_access" >
+      <view class="cell__bd">微信公众号</view>
+      <view class="cell__ft">vtmers</view>
+    </view>
+    <view  class="cell cell_access" bindtap="handleShow">
+      <view class="cell__bd">意见反馈</view>
+      <view class="cell__ft" ><view class="arrow" style="transform: rotate({{du}}deg);"></view></view>
+    </view>
+  </view> 
+  <view class="classname" style="display:{{feedbackShow}};">
+        <view class="suggest" >
+        <textarea bindinput="handleFbInput" value="{{feedbackValue}}" placeholder="请留下您的宝贵意见~" cursor-spacing="50"/>
+         </view>
+            <view class="aboutOurWrapper">
+                <button bindtap="handleSubmit" type="primary" style="background: #41ae8e;">提交</button>        
+            </view>
+    </view>
+    </view>
+    </view>
+</view>

@@ -1,0 +1,136 @@
+.weui-navbar__slider{
+    width: 187.5rpx;
+    background-color: #41ae8e;
+}
+.wrapper{
+    height: 100%;
+}
+.page__bd{
+    height: 100%;
+}
+.weui-navbar{
+    position: fixed;
+}
+swiper{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 50px;
+}
+.image{
+    width: 600rpx;
+    height: 500rpx;
+    margin: 20rpx auto 20rpx;
+    border-radius: 20rpx;
+    display: block;
+    border-top:22rpx solid #fff;
+    border-bottom :22rpx solid #fff;
+    border-left: 60rpx solid #fff;
+     border-right: 60rpx solid #fff;
+}
+
+.info{
+    width: 600rpx;
+    height: 400rpx;
+    margin: 0 auto 20rpx;
+    padding: 20rpx 60rpx;
+    border-radius: 20rpx;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 35rpx;
+    color: #888888;
+}
+.title{
+  width: 535rpx;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #353535;
+    font-size: 45rpx;
+    position: relative;
+    top: -20rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.intro{
+     width: 700rpx;
+     margin: 20rpx auto;
+     padding: 10rpx;
+     border-radius: 20rpx;
+     background: #FFFFFF;
+     color: #353535;
+     font-size: 30rpx;
+}
+.intro>view{
+  text-align: center;
+}
+.information{
+    flex-direction:column;
+  display: flex;
+  flex: 1;
+}
+.author{
+  display: flex
+}
+.public{
+display: flex
+}
+.left{
+flex:1
+}
+.right{
+flex:3
+}
+.contents{
+     width: 700rpx;
+     height: 88%;
+     margin: 20rpx auto;
+     padding: 10rpx 0 0 10rpx;
+     border-radius: 20rpx;
+     background: #FFFFFF;
+     color: #353535;
+     font-size: 30rpx;
+     overflow: hidden;
+}
+.collection{
+  display: block;
+  margin:20rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+}
+.informa{
+  display: flex;
+  flex:1
+}
+.site{
+     margin: 0 50rpx;
+     padding: 20rpx 10rpx 10rpx 10rpx;
+     color: #353535;
+     font-size: 30rpx;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 0.5rpx  #ecedf1 solid;
+}
+.library{
+  font-size: 32rpx;
+    flex: 1.7;
+}
+.isbn{
+  letter-spacing:4.3px;
+  margin-right:2.5px;
+
+}
+.coordinate{
+    flex: 1.5;
+text-align: right;
+font-size: 32rpx;
+}
+.status{
+    color: #888888;
+    flex: 1;
+    text-align: right;
+    font-size: 24rpx;
+}

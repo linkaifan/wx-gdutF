@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/course/course",    
+    "pages/me/score/score",
+    "pages/me/about/about",
+    "pages/me/bind/bind",
+    "pages/me/newsList/newsList",
+    "pages/me/me",
+    "pages/me/newsList/news/news",
+    "pages/me/library/library",
+    "pages/me/library/book/book",
+    "pages/me/library/borrow/borrow",
+    "pages/me/loading/loading",
+    "pages/me/slcore/slcore"
+  ],
+  "window": {
+    "backgroundColor": "#ECEDF1",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#41ae8e",
+    "navigationBarTitleText": "WeGDUT",
+    "navigationBarTextStyle": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#353535",
+    "selectedColor": "#41ae8e",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程表",
+        "iconPath": "assets/icon/course.png",
+        "selectedIconPath": "assets/icon/courseS.png"
+      },
+      {
+        "pagePath": "pages/me/score/score",
+        "text": "课程成绩",
+        "iconPath": "assets/icon/score.png",
+        "selectedIconPath": "assets/icon/scoreS.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "assets/icon/me.png",
+        "selectedIconPath": "assets/icon/meS.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,198 @@
+.wrapper{
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+}
+.head{
+  width: 100%;
+  height: 166.67rpx;
+  background: white;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.photo{
+  margin-left: 69.44rpx;
+  width: 111.11rpx;
+  height: 111.11rpx;
+  border-radius: 55.56rpx;
+  background: rgb(218, 218, 218);
+}
+.photoImg{
+  width: 100%;
+  height: 100%;
+}
+.info{
+  font-size:33.33rpx;
+  color:rgb(134, 134, 134);  
+  margin-left: 14.72rpx;
+}
+.bind{
+  font-size: 33.33rpx;
+  color: rgb(75, 75, 75);
+  float: right;
+  display:flex;
+  align-items:center;
+  height: 35.417rpx;
+  line-height: 35.417rpx;
+  position: absolute;
+  right: 48.61rpx;
+}
+.bindIcon{
+  margin-left: 31.25rpx;
+  width: 20.138rpx;
+  height: 35.417rpx;
+}
+
+
+.card{
+  width: 694.444rpx;
+  background: white;
+  margin: 0 auto;
+  margin-top: 27.778rpx;
+   /* height: 100%;  */
+  border-radius: 17.361rpx;
+  position: relative;
+}
+ .book{
+  display: inline-block;
+  width: 631.944rpx;
+  position: relative;
+} 
+.bookName{
+  font-size: 34.722rpx;
+  color: rgb(74, 74, 74);
+  line-height: 34.722rpx;
+  margin-top: 27.778rpx;
+  margin-left: 27.778rpx;
+}
+.date{
+  font-size: 29.167rpx;
+  color: rgb(135, 135, 135);
+  margin-left: 27.778rpx;
+  margin-top: 27.778rpx;
+  margin-bottom: 27.778rpx;
+}
+.borrowDate{
+  display: inline-block;
+}
+.returnDate{
+  display: inline-block;
+}
+.status{
+  width: 62.5rpx;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100%;
+  background: pink;
+  position: absolute;
+  right: 0;
+  border-top-right-radius: 17.361rpx;
+  border-bottom-right-radius: 17.361rpx;
+}
+.statusTxt{
+  text-align: center;
+  font-size: 26.389rpx;
+  width: 26.5rpx;
+  color: white;
+  line-height: 26.389rpx; 
+  position: absolute;
+}
+
+
+
+.bindWindow{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;  
+  left: 0;  
+}
+.bindForm{
+  width: 625rpx;
+  height: 555.556rpx;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  border-radius: 17.361rpx;
+}
+.bindTitle{
+  height: 138.889rpx;
+  background: rgb(84, 182, 153);
+  border-top-left-radius: 17.361rpx;
+  border-top-right-radius: 17.361rpx;
+  padding-left: 55.56rpx;
+  font-size: 38.194rpx;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.barcode{
+  width: 145.139rpx;
+  height: 79.167rpx;
+  margin-left: 275rpx;
+}
+.bindTable{
+  height: 319.444rpx;
+}
+.id{
+  width: 482.639rpx;
+  height: 83.333rpx;
+  padding-left: 31.25rpx;
+  background: rgb(235, 235, 235);
+  border-radius: 17.361rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 33.333rpx;
+  color:rgb(135, 135, 135);
+  margin-top: 34.722rpx;
+}
+.password{
+  width: 482.639rpx;
+  height: 83.333rpx;
+  padding-left: 31.25rpx;
+  background: rgb(235, 235, 235);
+  border-radius: 17.361rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 33.333rpx;
+  color:rgb(135, 135, 135);
+  margin-top: 27.778rpx;
+}
+.tips{
+  width: 513.889rpx;
+  font-size: 29.167rpx;
+  color: rgb(135, 135, 135);
+  margin: 0 auto;
+  margin-top: 22.917rpx;
+  text-align: right;
+}
+.bindButton{
+  width: 100%;
+  height: 96.222rpx;
+  border-top: 1rpx solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+}
+.button{
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  line-height: 96.222rpx;
+  background: inherit;
+  border: none;
+  font-size: 38.194rpx;
+  color: rgb(135, 135, 135);
+  text-align: center;
+}
+.ok{
+  color: rgb(84, 182, 153);
+}

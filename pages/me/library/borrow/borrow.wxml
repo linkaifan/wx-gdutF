@@ -1,0 +1,41 @@
+<import src="../../loading/loading" />
+<template is="{{loading}}"></template>
+<view class="wrapper">
+    <view class="head">
+      <view class="photo">
+        <image src="{{photoURL}}" class="photoImg"></image>
+      </view>
+      <view class="info">
+        <view class="infoId" hidden='neverBind'>学号：{{id}}</view>
+        <view class="infoSum" hidden='neverBind'>已借 <span style="color:rgb(75,75,75)">0</span> 本</view>
+      </view>
+       <view class="bind" bindtap="handleShowBindWindow">点击绑定<image class="bindIcon" src="../../../../assets/icon/borrowBind.png"></image></view> 
+    </view>
+    <!-- <view class='card'>
+      <view class='status'>
+        <view class='statusTxt'>逾期未还</view>
+      </view>
+      <view class='book'>
+        <view class='bookName'>Java从入门到精通</view>
+        <view class='date'>
+          <view class='borrowDate'>借入：2017.03.01</view>
+          <view class='returnDate'>应还：2017.03.01</view>
+        </view>
+      </view>
+    </view>  -->
+
+    <view class='bindWindow' hidden='{{bindWindowIsHidden}}'>
+      <view class='bindForm'>
+        <view class='bindTitle'>借书证<image class='barcode' src='../../../../assets/icon/barcode.png'></image></view>
+        <view class='bindtable'>
+          <view class='id'>学号：<input class='weui-input' bindinput="handleIdInput" value='{{id}}'></input></view>
+          <view class='password'>密码：<input class='weui-input' type="password" bindinput="handlePasswordInput" value='{{password}}'></input></view>
+          <view class='tips'>请使用图书馆账号绑定</view>
+        </view>
+        <view class='bindButton'>
+          <view class='cancel button'><a bindtap="handleHindBindWindow">取消</a></view>
+          <view class="ok button" bindtap="handleBind"><a>绑定</a></view>
+        </view>
+      </view>
+    </view>
+</view>

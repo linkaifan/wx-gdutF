@@ -1,0 +1,39 @@
+<view class="wrapper weui-cell_active">
+
+    <image class="logo" src="../../../assets/icon/logo.png"></image>
+    <view class="weui-cells weui-cells_after-title">
+        <view  class="bind weui-cell_input">
+            <view class="weui-cell__hd">
+                <image class="icon studentIcon" src="../../../assets/icon/student.png"></image>
+            </view>
+            <view class="weui-cell__bd">
+                <input  bindinput="handleIdInput" class="weui-input" placeholder="请输入学号" value="{{id}}" type="number" maxlength="10"/>
+            </view>
+            <view class="weui-cell__ft ft" wx:if="{{warnVisible}}">
+                 <icon type="warn" size="23" color="#E64340"></icon> 
+            </view>
+        </view>
+        <view class="bind weui-cell_input">
+            <view class="weui-cell__hd">
+                <image class="icon passwdIcon" src="../../../assets/icon/passwd.png"></image>
+            </view>
+            <view class="weui-cell__bd">
+                <input  bindinput="handlePasswordInput" type="password" class="weui-input" placeholder="请输入密码" value="{{password}}" maxlength="20"/>
+            </view>
+        </view>
+        <!--验证码输入  -->
+        <view class="bind weui-cell_input">
+            <view class="weui-cell__hd">
+              <image class="icon identifyingIcon" src="../../../assets/icon/identifying.png"></image>
+            </view>
+            <view class="weui-cell__bd">
+                <input  bindinput="handleVerifyCodeInput" class="weui-input" placeholder="请输入验证码" maxlength="4"/>
+            </view>
+            <image class="verifyImg" src="{{verifyImgURL}}" bindtap="requestAnotherVerify"></image>
+        </view>
+    </view>
+    <!--验证码图  -->
+    <text>注：请使用新教务系统账号密码</text>
+    <button bindtap="handleBind" class="weui-btn" type="primary" style="background-color: #41ae8e;">登录</button>
+    <image src="../../../assets/icon/bg.png" class="library"></image>
+</view>
